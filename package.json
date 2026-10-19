@@ -1,0 +1,5 @@
+{
+ "name":"quotepilot-ai","version":"1.0.0","private":true,"type":"module",
+ "scripts":{"dev":"wrangler dev","deploy":"wrangler deploy","db:local":"wrangler d1 execute quotepilot-db --local --file=sql/schema.sql","db:remote":"wrangler d1 execute quotepilot-db --remote --file=sql/schema.sql","check":"node --check src/worker.js && node --check public/app.js"},
+ "devDependencies":{"wrangler":"^4.0.0"}
+}
